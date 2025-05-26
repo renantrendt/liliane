@@ -61,7 +61,7 @@ const Timeline = () => {
         title: 'Professor',
         company: 'Escola Estadual João Belchior Marques Goulart',
         date: 'Jan 2001 - Apr 2005',
-        location: 'Alvorada, Tocantins, Brasil',
+        location: 'Alvorada, Rio grande do Sul, Brasil',
         description: 'Educator in the curricular components of physical education, arts, religious education, and sciences in Elementary School II and EJA. Created and developed an extracurricular project to promote autonomy through the arts.',
         icon: <FaChalkboardTeacher />
       }
@@ -90,6 +90,13 @@ const Timeline = () => {
       }
     ],
     education: [
+      {
+        title: 'Terapia Ocupacional',
+        institution: 'Faculdade de Pedagogia',
+        date: '2025',
+        description: 'Occupational Therapy',
+        icon: <FaGraduationCap />
+      },
       {
         title: 'Gestão Cultural',
         institution: 'Centro de Pesquisa e Formação Sesc',
@@ -190,8 +197,9 @@ const TimelineSection = styled.section`
   }
   
   .vertical-timeline-element-date {
-    color: ${props => props.theme === 'dark' ? 'var(--text-primary)' : 'var(--text-secondary)'};
-    opacity: 0.8;
+    color: #1a73e8; /* Blue color for dates */
+    opacity: 1;
+    font-weight: 500;
   }
 `;
 
